@@ -1,6 +1,6 @@
 # Glyph Studio
 
-A React browser and customization studio for the 300,000+ open-source icons available through Iconify.
+A React browser and customization studio for over 300,000+ open-source icons available online.
 
 ## Run locally
 
@@ -23,6 +23,6 @@ Open the local URL printed by Vite (normally `http://localhost:5173`).
 - Save favorites locally in the browser
 - Light/dark theme and responsive mobile layout
 
-This is a client-side app and uses the public `https://api.iconify.design` endpoints. No API key or backend is required. Icon licenses vary by collection; the editor displays the collection's license metadata when Iconify provides it.
+This is a client-side app and uses among other sources, the public `https://api.iconify.design` endpoint. No API key or backend is required. Icon licenses vary by collection; the editor displays the collection's license metadata when provided.
 
 To rebuild the compact category index after changing files in `public/icon-json-data`, run `npm run build:categories`. The production build intentionally excludes the 450 MB source archive and ships only `category-index.json`.
