@@ -91,6 +91,38 @@ header .theme-toggle {
   height: calc(var(--grid-size, 120px) + 15px);
 }
 
+.pager {
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.pager-summary {
+  color: var(--muted);
+}
+
+.pager-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pager-controls label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.pager-controls input {
+  width: 64px;
+  height: 34px;
+  padding: 0 6px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--panel);
+  text-align: center;
+}
+
 .view-size {
   height: 38px;
   display: flex;
@@ -220,4 +252,12 @@ header .theme-toggle {
   .view-size { order: 3; }
   .filters { flex-wrap: wrap; }
   .grid { grid-template-columns: repeat(auto-fill, minmax(var(--grid-size, 120px), 1fr)); }
+  .pager { flex-direction: column; }
+  .pager-controls { width: 100%; justify-content: center; }
+}
+
+@media (max-width: 480px) {
+  .pager-controls { gap: 6px; }
+  .pager-controls button { padding-inline: 10px; }
+  .pager-controls input { width: 52px; }
 }
