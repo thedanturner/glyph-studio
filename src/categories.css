@@ -30,6 +30,12 @@ header .theme-toggle {
   margin-left: 4px;
 }
 
+.github-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .aside-title {
   display: flex;
   justify-content: space-between;
